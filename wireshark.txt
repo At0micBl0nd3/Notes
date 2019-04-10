@@ -1,0 +1,4 @@
+# How to Export objects from WIRESHARK
+		1. Capture
+		2. File > Export Objects > [HTTP, or SMB, whatever you're looking for]
+		
