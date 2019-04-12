@@ -1,0 +1,93 @@
+Newbie Notes
+
+ex. Base 64:
+ZmxhZ3syNzN5bjk4N2Q4M3VkNzJ4eWQ3ODJ0fQ==      <= notice the '==' at the end, dead giveaway
+dGhpc2lzYXRlc3RvZnRoZWJhc2VnaWFudHZvaWNlc3lzdGVt
+
+ex HEX:
+74686973697361746573746f66746865626173656769616e74766f69636573797374656d
+
+other (less common) encodings?
+Base32
+Base(insert number here)
+octal
+
+
+Lesson 1
+# Practice problems
+http://army-shell.cyberstakesonline.com:49101/
+http://army-shell.cyberstakesonline.com:22755/
+
+
+# good references
+https://writeups.easyctf.com/
+https://ctftime.org/
+
+tools:
+-burpsuite	
+-sqlmap (linux)
+-EditThisCookie
+-FoxyProxy
+-owasp-zap and w3af (linux)
+-asciitohex.com
+-asciitable.com
+-jsnice.org or java beautifier
+
+Kinds of web extensions (look this word up if you aren't sure what it means)
+js/css/html/php/flask (flask is not an extension)
+
+php- What most websites are written in, it contains html which can be viewed and edited by the client. 
+However, the PHP code itself cannot be viewed or edited by the client.
+(this is where most flags are)
+flask- Python's version of creating web pages, easier to understand after CS210
+
+js- JavaScript file, executes code dynamically on web page
+css- cascading style sheets, makes the website look nice
+html- some files have no PHP, not common in CTFs though
+
+possibilities:
+-source
+--right click/view source
+# Important linux command for later, downloads all source code related to url
+wget -r [url] -l0 = spider command 
+
+-cookies
+--EditThisCookie
+--Burpsuite and FoxyProxy
+
+-URL Injection (look up commix if you have time)
+--robots.txt
+--/flag
+--/admin
+--../../../../../etc/passwd
+
+-SQL
+--sqlmap
+--https://2017game.picoctf.com
+--long,grueling process
+-- ', ", `, --, or '1'='1, junk' UNION SELECT 1,1,login,1,1,1 FROM users
+--find version
+--enumerate tables and colums by looking at respective schema tables
+
+------harder------ (look these up if you're curious but they won't be in the assigned problems)
+-xml (good writeup- http://shpik.tistory.com/78) (MonsterDex on Cyberstakes) (tell me if you don't have that unlocked and you want to try it)
+-xss (https://alf.nu/alert1) (https://gokulkrishna01.wordpress.com/2016/09/09/admin-i-web-100-xss-sect-ctf-2016/)
+-type casting
+-remote code execution
+-using hyrda (very rare to have to do password guessing)
+--if a page says "your note will be checked by admin" it is most likely javascript/xss
+
+Problems:
+Aggie CTF- https://ctf.tamu.edu/
+Cross-site cookies is advanced
+
+Pico CTF- https://2017game.picoctf.com
+--delogrand@gmail.com
+--D0gsD0gsD0gs
+What is Web/My First Sql (without sqlmap)/Biscuit/A Happy Union (not a sqlmap problem)
+
+Cyberstakes
+https://army.cyberstakesonline.com/
+Good Cookies one: Robot revolution
+You won't have many problems unlocked, let me know early if you get stuck
+
