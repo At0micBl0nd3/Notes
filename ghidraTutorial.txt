@@ -1,0 +1,18 @@
+main in a C or Python function = entry in ghidra disassembly
+G = go to
+S = search
+F4 = assign a hot key
+highlight data type > right click > Convert ~ Can change integer to hexadecimal, etc.
+Search Memory function: May search for sequences of hex, 
+
+COMMENTS IN GHIDRA
+
+Pre-line comment	/*Can see this comment better*/
+End-of-Line comment	Cannot see this comment as well
+
+Hex Editor: FIND original bytes and REPLACE them with the hexadecimal values you want
+
+Python interpreter in Ghidra - can use to script in Ghidra!
+Can also use Python commands that reference parts of memory w/i program
+	i.e. getInstructionAt(currentAddress)
+
